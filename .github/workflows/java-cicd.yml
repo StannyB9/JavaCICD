@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - StannyB CICD
+      - StannyB-CICD
   workflow_dispatch:
   
 jobs:
@@ -24,7 +24,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
       with:
-        ref: StannyB CICD
+        ref: StannyB-CICD
 
     - name: Show directory
       run: 'pwd'
