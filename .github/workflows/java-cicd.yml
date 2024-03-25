@@ -33,16 +33,10 @@ jobs:
       run: 'ls -al'
 
     - name: Install Dependencies
-      run: |
-        cd JavaCICD
-        ./mvnw install -DskipTests
+      run: 'mvn compile'
 
     - name: Build application
-      run: |
-        cd JavaCICD
-        ./mvnw package
+      run: 'mvn package -DskipTests'
 
     - name: Test application
-      run: |
-        cd JavaCICD
-        ./mvnw test
+      run: 'mvn test'
