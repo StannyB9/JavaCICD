@@ -34,15 +34,15 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        cd dofd-05-java-StannyB9
+        cd JavaCICD
         ./mvnw install -DskipTests
 
     - name: Build application
       run: |
-        cd dofd-05-java-StannyB9
+        cd JavaCICD
         ./mvnw package
 
     - name: Test application
       run: |
-        cd dofd-05-java-StannyB9
+        cd JavaCICD
         ./mvnw test
