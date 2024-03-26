@@ -4,6 +4,8 @@ on:
     branches:
       - main
       - StannyB-CICD
+  pull_request:
+    types: [opened, synchronize]
   workflow_dispatch:
 
 jobs:
